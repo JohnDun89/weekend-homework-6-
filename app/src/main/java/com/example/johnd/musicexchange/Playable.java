@@ -6,5 +6,5 @@ package com.example.johnd.musicexchange;
 
 public interface Playable {
 
-    java.lang.String instrumentNoise();
+    public String instrumentNoise();
 }

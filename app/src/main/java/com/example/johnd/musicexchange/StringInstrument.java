@@ -5,4 +5,10 @@ package com.example.johnd.musicexchange;
  */
 
 public abstract class StringInstrument extends Instrument {
+
+    String manufacturer;
+
+    public StringInstrument( String manufacturer) {
+        super(manufacturer);
+    }
 }

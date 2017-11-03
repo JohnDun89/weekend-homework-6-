@@ -15,7 +15,7 @@ public class SaxaphoneTest {
 
     @Before
     public void before(){
-        saxaphone = new Saxophone();
+        saxaphone = new Saxophone("Yamaha");
     }
 
     @Test

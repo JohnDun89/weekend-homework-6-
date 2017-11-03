@@ -6,7 +6,12 @@ package com.example.johnd.musicexchange;
 
 public class Saxophone extends WoodWind  {
 
-    public java.lang.String instrumentNoise() {
+    String manufacturer;
+
+    public Saxophone(String manufacturer){
+        super(manufacturer);
+    }
+    public String instrumentNoise() {
         return "Baker Street";
     }
 }

@@ -6,6 +6,12 @@ package com.example.johnd.musicexchange;
 
 public class BassGuitar extends StringInstrument {
 
+    String manufacturer;
+
+    public BassGuitar(String manufacturer) {
+        super(manufacturer);
+    }
+
     public java.lang.String  instrumentNoise(){
         return "Ding Ding";
     }

@@ -5,4 +5,10 @@ package com.example.johnd.musicexchange;
  */
 
 public abstract class WoodWind extends Instrument {
+
+        String manufacturer;
+
+    public WoodWind(String manufacturer) {
+        super(manufacturer);
+    }
 }

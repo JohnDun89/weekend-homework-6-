@@ -6,5 +6,12 @@ package com.example.johnd.musicexchange;
 
 public abstract class Instrument extends ShopObject implements Playable {
 
+    public String manufacturer;
+
+
+    public Instrument(String manufacturer) {
+        this.manufacturer = manufacturer;
+    }
+
 
 }

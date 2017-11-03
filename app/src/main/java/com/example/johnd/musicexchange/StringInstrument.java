@@ -9,14 +9,10 @@ public abstract class StringInstrument extends Instrument {
     String manufacturer;
     int numberOfStrings;
 
-//    public StringInstrument(Double buyPrice, Double sellPrice, String manufacturer, int numberOfStrings) {
-//        super(buyPrice, sellPrice, manufacturer);
-//        this.numberOfStrings = numberOfStrings;
-//
-//    }
 
     public StringInstrument(Double buyPrice, Double sellPrice, String manufacturer, int numberOfStrings) {
         super(buyPrice, sellPrice, manufacturer);
+        this.numberOfStrings = numberOfStrings;
     }
 
 

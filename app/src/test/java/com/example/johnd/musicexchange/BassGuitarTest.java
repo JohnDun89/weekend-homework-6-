@@ -22,4 +22,9 @@ public class BassGuitarTest {
     public void canBassGuitarReturnNoise(){
         assertEquals("Ding Ding", bassguitar.instrumentNoise());
     }
+
+    @Test
+    public void canGuitarReturnNumberOfStrings(){
+        assertEquals(6,bassguitar.getNumberOfStrings());
+    }
 }

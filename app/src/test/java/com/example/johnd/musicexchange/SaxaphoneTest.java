@@ -33,9 +33,14 @@ public class SaxaphoneTest {
     public void isSaxaphoneSuppliedWithReid(){
         assertTrue("yes", saxaphone.getSupliedWithRead());
     }
-    
+
     @Test
     public void getSellPriceOfSaxophone(){
         assertEquals(765.00, saxaphone.getSellPrice());
+    }
+
+    @Test
+    public void testMarkupInterfaceInSaxophone(){
+        assertEquals(265.00,saxaphone.markup(), 0.1);
     }
 }

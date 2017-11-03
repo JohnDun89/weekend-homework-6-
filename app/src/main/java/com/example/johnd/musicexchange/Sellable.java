@@ -6,5 +6,6 @@ package com.example.johnd.musicexchange;
 
 public interface Sellable {
 
-    Double returnMarkupOnObject(Item item);
+    Double markup();
+
 }

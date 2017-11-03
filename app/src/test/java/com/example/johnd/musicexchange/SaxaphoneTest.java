@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.assertTrue;
 
 /**
  * Created by JohnD on 03/11/2017.
@@ -15,7 +16,7 @@ public class SaxaphoneTest {
 
     @Before
     public void before(){
-        saxaphone = new Saxophone("Yamaha","unpainted bronze");
+        saxaphone = new Saxophone("Yamaha",true,"unpainted bronze");
     }
 
     @Test
@@ -26,5 +27,10 @@ public class SaxaphoneTest {
     @Test
     public void canSaxaphoneReturnColour(){
         assertEquals("unpainted bronze",saxaphone.getColour());
+    }
+
+    @Test
+    public void isSaxaphoneSuppliedWithReid(){
+        assertTrue("yes", saxaphone.getSupliedWithRead());
     }
 }

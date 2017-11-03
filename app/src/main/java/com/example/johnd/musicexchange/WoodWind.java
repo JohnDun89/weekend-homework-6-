@@ -7,8 +7,14 @@ package com.example.johnd.musicexchange;
 public abstract class WoodWind extends Instrument {
 
         String manufacturer;
+        Boolean suppliedWithReid;
 
-    public WoodWind(String manufacturer) {
+    public WoodWind(String manufacturer, Boolean suppliedWithReid) {
         super(manufacturer);
+        this.suppliedWithReid = suppliedWithReid;
+    }
+
+    public Boolean getSupliedWithRead(){
+        return this.suppliedWithReid;
     }
 }

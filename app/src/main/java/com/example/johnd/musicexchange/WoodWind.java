@@ -9,8 +9,8 @@ public abstract class WoodWind extends Instrument {
         String manufacturer;
         Boolean suppliedWithReid;
 
-    public WoodWind(String manufacturer, Boolean suppliedWithReid) {
-        super(manufacturer);
+    public WoodWind(Double buyPrice, Double sellPrice, String manufacturer, Boolean suppliedWithReid) {
+        super(buyPrice, sellPrice, manufacturer);
         this.suppliedWithReid = suppliedWithReid;
     }
 

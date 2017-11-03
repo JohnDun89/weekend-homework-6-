@@ -8,8 +8,8 @@ public class BassGuitar extends StringInstrument {
 
     String manufacturer;
 
-    public BassGuitar(String manufacturer) {
-        super(manufacturer);
+    public BassGuitar(Double buyPrice, Double sellPrice,String manufacturer, int numberOfStrings) {
+        super(buyPrice, sellPrice, manufacturer, numberOfStrings);
     }
 
     public java.lang.String  instrumentNoise(){

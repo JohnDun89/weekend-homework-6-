@@ -5,4 +5,8 @@ package com.example.johnd.musicexchange;
  */
 
 public abstract class Item extends ShopObject {
+
+    public Item(Double buyPrice, Double sellPrice) {
+        super(buyPrice, sellPrice);
+    }
 }

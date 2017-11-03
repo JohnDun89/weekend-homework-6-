@@ -5,4 +5,20 @@ package com.example.johnd.musicexchange;
  */
 
 public abstract class ShopObject {
+
+    Double buyPrice;
+    Double sellPrice;
+
+    public ShopObject(Double buyPrice, Double sellPrice){
+        this.buyPrice = buyPrice;
+        this.sellPrice = sellPrice;
+    }
+
+    public Double getBuyPrice() {
+        return buyPrice;
+    }
+
+    public Double getSellPrice() {
+        return sellPrice;
+    }
 }

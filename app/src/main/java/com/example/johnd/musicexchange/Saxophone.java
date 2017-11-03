@@ -9,8 +9,8 @@ public class Saxophone extends WoodWind  {
 
     String colour;
 
-    public Saxophone(String manufacturer,Boolean suppliedWithReid, String colour){
-        super(manufacturer, suppliedWithReid);
+    public Saxophone(Double sellPrice, Double buyPrice, String manufacturer,Boolean suppliedWithReid, String colour){
+        super(sellPrice, buyPrice, manufacturer, suppliedWithReid);
         this.colour = colour;
     }
 

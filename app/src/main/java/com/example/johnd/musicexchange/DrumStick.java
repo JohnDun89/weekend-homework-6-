@@ -5,4 +5,7 @@ package com.example.johnd.musicexchange;
  */
 
 public class DrumStick extends Item {
+    public DrumStick(Double buyPrice, Double sellPrice) {
+        super(buyPrice, sellPrice);
+    }
 }

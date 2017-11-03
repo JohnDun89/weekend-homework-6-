@@ -5,4 +5,7 @@ package com.example.johnd.musicexchange;
  */
 
 public class plectrum extends Item {
+    plectrum(Double buyPrice, Double sellPrice) {
+        super(buyPrice, sellPrice);
+    }
 }

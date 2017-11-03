@@ -16,7 +16,7 @@ public class SaxaphoneTest {
 
     @Before
     public void before(){
-        saxaphone = new Saxophone("Yamaha",true,"unpainted bronze");
+        saxaphone = new Saxophone(765.00,500.00,"Yamaha",true,"unpainted bronze");
     }
 
     @Test
@@ -32,5 +32,10 @@ public class SaxaphoneTest {
     @Test
     public void isSaxaphoneSuppliedWithReid(){
         assertTrue("yes", saxaphone.getSupliedWithRead());
+    }
+    
+    @Test
+    public void getSellPriceOfSaxophone(){
+        assertEquals(765.00, saxaphone.getSellPrice());
     }
 }

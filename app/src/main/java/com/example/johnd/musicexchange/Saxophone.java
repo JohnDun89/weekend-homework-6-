@@ -6,12 +6,19 @@ package com.example.johnd.musicexchange;
 
 public class Saxophone extends WoodWind  {
 
-    String manufacturer;
 
-    public Saxophone(String manufacturer){
+    String colour;
+
+    public Saxophone(String manufacturer, String colour){
         super(manufacturer);
+        this.colour = colour;
     }
+
     public String instrumentNoise() {
         return "Baker Street";
+    }
+
+    public String getColour() {
+        return this.colour;
     }
 }

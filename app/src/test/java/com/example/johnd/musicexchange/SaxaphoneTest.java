@@ -15,11 +15,16 @@ public class SaxaphoneTest {
 
     @Before
     public void before(){
-        saxaphone = new Saxophone("Yamaha");
+        saxaphone = new Saxophone("Yamaha","unpainted bronze");
     }
 
     @Test
     public void canSaxaphoneReturnInstrumentNoise(){
         assertEquals("Baker Street", saxaphone.instrumentNoise());
+    }
+
+    @Test
+    public void canSaxaphoneReturnColour(){
+        assertEquals("unpainted bronze",saxaphone.getColour());
     }
 }

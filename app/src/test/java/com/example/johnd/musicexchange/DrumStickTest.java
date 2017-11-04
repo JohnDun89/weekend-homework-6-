@@ -29,4 +29,9 @@ public class DrumStickTest {
     public void testGetDrumStickName(){
         assertEquals("Mid price sticks", drumSticks.getItemName());
     }
+
+    @Test
+    public void testCanGetDrumStickSellPrice(){
+        assertEquals(25.00, drumSticks.getSellPrice(),0.1);
+    }
 }

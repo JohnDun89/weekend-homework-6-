@@ -7,15 +7,17 @@ package com.example.johnd.musicexchange;
 public abstract class Instrument extends ShopObject implements Playable, Sellable {
 
     public String manufacturer;
+    private String name;
 
 
-    public Instrument(Double buyPrice, Double sellPrice, String manufacturer) {
+
+    public Instrument(Double buyPrice, Double sellPrice, String name, String manufacturer) {
         super(buyPrice, sellPrice, name);
         this.manufacturer = manufacturer;
         this.buyPrice = buyPrice;
         this.sellPrice = sellPrice;
+        this.name = name;
     }
-
 
 
 

@@ -10,12 +10,14 @@ public class Saxophone extends WoodWind implements Sellable {
     private String name;
     String colour;
 
-    public Saxophone(Double sellPrice, Double buyPrice, String name, Boolean suppliedWithReid, String colour){
-        super(sellPrice, buyPrice, name, manufacturer, suppliedWithReid);
+
+    public Saxophone(Double sellPrice, Double buyPrice, String Manufacturer, String name, Boolean suppliedWithReid, String colour){
+        super(sellPrice, buyPrice, name, Manufacturer, suppliedWithReid);
         this.colour = colour;
         this.buyPrice = buyPrice;
         this.sellPrice = sellPrice;
         this.name = name;
+
     }
 
 

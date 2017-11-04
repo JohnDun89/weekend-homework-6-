@@ -27,7 +27,7 @@ public class DrumStickTest {
 
     @Test
     public void testGetDrumStickName(){
-        assertEquals("Mid price sticks", drumSticks.getItemName());
+        assertEquals("Mid price sticks", drumSticks.name());
     }
 
     @Test

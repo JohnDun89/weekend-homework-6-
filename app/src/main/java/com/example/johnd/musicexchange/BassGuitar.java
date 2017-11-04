@@ -11,7 +11,7 @@ public class BassGuitar extends StringInstrument implements Sellable {
 
 
     public BassGuitar(Double buyPrice, Double sellPrice, String name, String manufacturer, int numberOfStrings) {
-        super(buyPrice, sellPrice, manufacturer, numberOfStrings);
+        super(buyPrice, sellPrice, name, manufacturer, numberOfStrings);
         this.buyPrice = buyPrice;
         this.sellPrice = sellPrice;
         this.name = name;

@@ -10,8 +10,9 @@ public abstract class StringInstrument extends Instrument implements Sellable, P
     int numberOfStrings;
 
 
-    public StringInstrument(Double buyPrice, Double sellPrice, String manufacturer, int numberOfStrings) {
-        super(buyPrice, sellPrice, manufacturer);
+
+    public StringInstrument(Double buyPrice, Double sellPrice,String name, String manufacturer, int numberOfStrings) {
+        super(buyPrice, sellPrice, name, manufacturer);
         this.numberOfStrings = numberOfStrings;
     }
 

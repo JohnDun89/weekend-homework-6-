@@ -10,7 +10,7 @@ public abstract class WoodWind extends Instrument implements Sellable {
         Boolean suppliedWithReid;
 
     public WoodWind(Double buyPrice, Double sellPrice, String name, String manufacturer, Boolean suppliedWithReid) {
-        super(buyPrice, sellPrice, manufacturer);
+        super(buyPrice, sellPrice, name, manufacturer);
         this.suppliedWithReid = suppliedWithReid;
     }
 

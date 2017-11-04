@@ -7,13 +7,15 @@ package com.example.johnd.musicexchange;
 public class Saxophone extends WoodWind implements Sellable {
 
 
+    private String name;
     String colour;
 
-    public Saxophone(Double sellPrice, Double buyPrice, String manufacturer,Boolean suppliedWithReid, String colour){
-        super(sellPrice, buyPrice, manufacturer, suppliedWithReid);
+    public Saxophone(Double sellPrice, Double buyPrice, String name, Boolean suppliedWithReid, String colour){
+        super(sellPrice, buyPrice, name, manufacturer, suppliedWithReid);
         this.colour = colour;
         this.buyPrice = buyPrice;
         this.sellPrice = sellPrice;
+        this.name = name;
     }
 
 
@@ -28,5 +30,10 @@ public class Saxophone extends WoodWind implements Sellable {
     @Override
     public Double markup() {
         return sellPrice -= buyPrice;
+    }
+
+    @Override
+    public String name() {
+        return name;
     }
 }

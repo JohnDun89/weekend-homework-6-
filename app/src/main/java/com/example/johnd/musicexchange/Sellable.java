@@ -7,5 +7,5 @@ package com.example.johnd.musicexchange;
 public interface Sellable {
 
     Double markup();
-
+    String name();
 }

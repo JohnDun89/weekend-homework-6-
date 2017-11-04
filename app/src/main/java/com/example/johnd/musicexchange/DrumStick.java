@@ -5,8 +5,8 @@ package com.example.johnd.musicexchange;
  */
 
 public class DrumStick extends Item implements Sellable {
-    public DrumStick(Double buyPrice, Double sellPrice, String itemName) {
-        super(buyPrice, sellPrice, itemName);
+    public DrumStick(Double buyPrice, Double sellPrice, String name) {
+        super(buyPrice, sellPrice, name);
         this.buyPrice = buyPrice;
         this.sellPrice = sellPrice;
         this.itemName = itemName;

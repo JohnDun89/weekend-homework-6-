@@ -7,12 +7,16 @@ package com.example.johnd.musicexchange;
 public abstract class Item extends ShopObject implements Sellable{
 
     String itemName;
+    private String name;
 
-    public Item(Double buyPrice, Double sellPrice, String itemName) {
-        super(buyPrice, sellPrice);
+    public Item(Double buyPrice, Double sellPrice, String name) {
+        super(buyPrice, sellPrice, name);
+        this.name = name;
+        this.name = name;
     }
 
-    public String getItemName(){
-        return this.itemName;
+    @Override
+    public String name() {
+        return name;
     }
 }

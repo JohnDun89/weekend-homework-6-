@@ -10,7 +10,7 @@ public abstract class Instrument extends ShopObject implements Playable, Sellabl
 
 
     public Instrument(Double buyPrice, Double sellPrice, String manufacturer) {
-        super(buyPrice, sellPrice);
+        super(buyPrice, sellPrice, name);
         this.manufacturer = manufacturer;
         this.buyPrice = buyPrice;
         this.sellPrice = sellPrice;

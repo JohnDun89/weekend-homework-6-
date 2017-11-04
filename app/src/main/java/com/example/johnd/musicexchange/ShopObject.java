@@ -9,7 +9,7 @@ public abstract class ShopObject {
     Double buyPrice;
     Double sellPrice;
 
-    public ShopObject(Double buyPrice, Double sellPrice){
+    public ShopObject(Double buyPrice, Double sellPrice, String name){
         this.buyPrice = buyPrice;
         this.sellPrice = sellPrice;
     }

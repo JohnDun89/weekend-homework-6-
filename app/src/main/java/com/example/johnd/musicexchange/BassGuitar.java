@@ -31,5 +31,10 @@ public class BassGuitar extends StringInstrument implements Sellable {
     public String name() {
         return this.name;
     }
+
+    @Override
+    public String stock(String item) {
+        return null;
+    }
 }
 

@@ -17,4 +17,9 @@ public class DrumStick extends Item implements Sellable {
         return sellPrice -= buyPrice;
     }
 
+    @Override
+    public String stock(String item) {
+        return null;
+    }
+
 }

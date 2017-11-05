@@ -29,13 +29,18 @@ public class Saxophone extends WoodWind implements Sellable {
         return this.colour;
     }
 
-    @Override
+
     public Double markup() {
         return sellPrice -= buyPrice;
     }
 
-    @Override
+
     public String name() {
         return name;
+    }
+
+    @Override
+    public String stock(String item) {
+        return null;
     }
 }

@@ -15,4 +15,9 @@ public class plectrum extends Item implements Sellable{
     public Double markup() {
         return sellPrice -= buyPrice;
     }
+
+    @Override
+    public String stock(String item) {
+        return null;
+    }
 }

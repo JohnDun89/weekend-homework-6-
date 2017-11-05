@@ -12,7 +12,7 @@ public class Shop {
     private  ArrayList<Sellable> inventory;
     private String shopName;
 
-    Shop(String ShopName){
+    Shop(String ShopName, ArrayList inventory){
         this.inventory = inventory;
         this.shopName = ShopName;
         }
@@ -21,4 +21,11 @@ public class Shop {
         return this.shopName;
         }
 
+    public ArrayList<Sellable> getInventory() {
+        return inventory;
     }
+
+    public void addToArrayList(Sellable sellable){
+          inventory.add(sellable);
+    }
+}

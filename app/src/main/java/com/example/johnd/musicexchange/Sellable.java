@@ -8,4 +8,5 @@ public interface Sellable {
 
     Double markup();
     String name();
+    String stock(String item);
 }
